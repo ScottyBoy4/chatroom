@@ -60,9 +60,12 @@ drone.on('error', error => {
 
 function getRandomName() {
    var namesetz = document.getElementById('name');
+  if namesetz != ""{
   return (
     namesetz.value
   );
+  }
+  
 }
 
 function getRandomColor() {
