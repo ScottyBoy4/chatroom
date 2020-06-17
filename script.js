@@ -61,7 +61,7 @@ drone.on('error', error => {
 function getRandomName() {
    var namesetz = document.getElementById('name');
   return (
-    namesetz.value;
+    namesetz.value
   );
 }
 
