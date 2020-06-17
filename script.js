@@ -61,11 +61,16 @@ drone.on('error', error => {
 function getRandomName() {
    var namesetz = document.getElementById('name');
   for (;;) {
-  if namesetz != ""{
+  if namesetz == ""{
   return (
     namesetz.value
   );
   }
+    else{
+      return (
+    namesetz.value
+  );
+    }
   }
   
 }
