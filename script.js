@@ -1,7 +1,7 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'wAeHwuxvJX953oYN';
-
+var dodaloop = true;
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
     name: getRandomName(),
@@ -60,13 +60,14 @@ drone.on('error', error => {
 
 function getRandomName() {
    var namesetz = document.getElementById('name');
-  for (;;) {
+  while (dodaloop == true){
   if namesetz == ""{
   return (
     namesetz.value
   );
   }
     else{
+      dodaloop = false;
       return (
     namesetz.value
   );
